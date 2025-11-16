@@ -24,7 +24,7 @@ export default function CoursesPage() {
   const courses = [
     {
       title: "IB Program Tutoring",
-      description: "Comprehensive International Baccalaureate program support with experienced IB educators. Individual and group sessions available.",
+      description: "We can help you keep up with current program, recover some past topics and prepare for exams and tests.",
       link: "#ib-tutoring",
       icon: <Award className="w-6 h-6" />
     },
