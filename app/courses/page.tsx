@@ -107,7 +107,7 @@ export default function CoursesPage() {
       title: "All Courses",
       value: "all-courses",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+        <div className="w-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Our Complete Course Catalog</p>
           <HoverEffect items={courses} />
         </div>
@@ -117,7 +117,7 @@ export default function CoursesPage() {
       title: "IB Workbooks",
       value: "ib-workbooks", 
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-700 to-cyan-900">
+        <div className="w-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-700 to-cyan-900">
           <p className="mb-8">IB Workbooks & Resources</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-black/20 p-6 rounded-lg">
@@ -152,7 +152,7 @@ export default function CoursesPage() {
       title: "Merch Shop",
       value: "merch-shop",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-green-700 to-emerald-900">
+        <div className="w-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-green-700 to-emerald-900">
           <p className="mb-8">School Merchandise</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center">
@@ -199,7 +199,7 @@ export default function CoursesPage() {
             </p>
           </div>
 
-          <div className="h-20 md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mb-16 md:mb-24">
+          <div className="[perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start gap-8 mb-16 md:mb-24">
             <Tabs tabs={tabs} />
           </div>
         </motion.div>
