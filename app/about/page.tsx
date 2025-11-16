@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { motion } from "framer-motion";
@@ -12,6 +12,11 @@ export default function AboutPage() {
     type: null,
     message: "",
   });
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -325,81 +330,85 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <form
-                  onSubmit={handleSubmit}
-                  className="bg-neutral-50 dark:bg-neutral-900 rounded-2xl p-8 shadow-lg space-y-4"
-                >
-                  <h3 className="text-2xl font-bold text-black dark:text-white">Send us a message</h3>
-                  <p className="text-neutral-600 dark:text-neutral-400">
-                    Share a few details and we’ll respond soon. Your information is sent securely.
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label className="block text-sm font-semibold text-black dark:text-white">Name</label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="block text-sm font-semibold text-black dark:text-white">Email</label>
-                      <input
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="you@example.com"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-black dark:text-white">Message</label>
-                    <textarea
-                      required
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      rows={4}
-                      className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="How can we help?"
-                    />
-                  </div>
-                  {feedback.type && (
-                    <div
-                      className={`text-sm font-semibold ${
-                        feedback.type === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
-                      }`}
-                    >
-                      {feedback.message}
-                    </div>
-                  )}
-                  <div className="flex gap-3 items-center">
-                    <motion.button
-                      type="submit"
-                      whileHover={{ scale: sending ? 1 : 1.03 }}
-                      whileTap={{ scale: sending ? 1 : 0.98 }}
-                      disabled={sending}
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-60 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300"
-                    >
-                      {sending ? "Sending..." : "Send message"}
-                    </motion.button>
-                    <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                      We’ll reply to your email as soon as possible.
+                {mounted && (
+                  <form
+                    onSubmit={handleSubmit}
+                    className="bg-neutral-50 dark:bg-neutral-900 rounded-2xl p-8 shadow-lg space-y-4"
+                  >
+                    <h3 className="text-2xl font-bold text-black dark:text-white">Send us a message</h3>
+                    <p className="text-neutral-600 dark:text-neutral-400">
+                      Share a few details and we’ll respond soon. Your information is sent securely.
                     </p>
-                  </div>
-                </form>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label className="block text-sm font-semibold text-black dark:text-white">Name</label>
+                        <input
+                          type="text"
+                          required
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          placeholder="Your name"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="block text-sm font-semibold text-black dark:text-white">Email</label>
+                        <input
+                          type="email"
+                          required
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          placeholder="you@example.com"
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <label className="block text-sm font-semibold text-black dark:text-white">Message</label>
+                      <textarea
+                        required
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        rows={4}
+                        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="How can we help?"
+                      />
+                    </div>
+                    {feedback.type && (
+                      <div
+                        className={`text-sm font-semibold ${
+                          feedback.type === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+                        }`}
+                      >
+                        {feedback.message}
+                      </div>
+                    )}
+                    <div className="flex gap-3 items-center">
+                      <motion.button
+                        type="submit"
+                        whileHover={{ scale: sending ? 1 : 1.03 }}
+                        whileTap={{ scale: sending ? 1 : 0.98 }}
+                        disabled={sending}
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-60 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300"
+                      >
+                        {sending ? "Sending..." : "Send message"}
+                      </motion.button>
+                      <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                        We’ll reply to your email as soon as possible.
+                      </p>
+                    </div>
+                  </form>
+                )}
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-300"
-                >
-                  Schedule a Campus Visit
-                </motion.button>
+                {mounted && (
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-300"
+                  >
+                    Schedule a Campus Visit
+                  </motion.button>
+                )}
               </motion.div>
 
               {/* Interactive Map */}
