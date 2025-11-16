@@ -400,15 +400,6 @@ export default function AboutPage() {
                   </form>
                 )}
 
-                {mounted && (
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-300"
-                  >
-                    Schedule a Campus Visit
-                  </motion.button>
-                )}
               </motion.div>
 
               {/* Interactive Map */}

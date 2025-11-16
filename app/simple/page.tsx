@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Star, Users, Award, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function SimplePage() {
   return (
@@ -37,21 +38,25 @@ export default function SimplePage() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-col md:flex-row gap-4 justify-center items-center"
           >
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 30px rgba(59, 130, 246, 0.3)" }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-xl"
-            >
-              Explore Programs <ArrowRight className="w-5 h-5" />
-            </motion.button>
+            <Link href="/courses">
+              <motion.button
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 30px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-xl"
+              >
+                Explore Programs <ArrowRight className="w-5 h-5" />
+              </motion.button>
+            </Link>
             
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all"
-            >
-              Book Consultation
-            </motion.button>
+            <Link href="/courses">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all"
+              >
+                Book Consultation
+              </motion.button>
+            </Link>
           </motion.div>
           
           {/* Stats */}

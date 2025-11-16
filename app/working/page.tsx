@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Star, Users, Award, ArrowRight, BookOpen, GraduationCap } from "lucide-react";
+import Link from "next/link";
 
 export default function WorkingPage() {
   const [mounted, setMounted] = useState(false);
@@ -48,13 +49,19 @@ export default function WorkingPage() {
           </div>
           
           <div className="animate-fade-in-up space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center" style={{animationDelay: '0.6s'}}>
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full md:w-auto justify-center">
+            <Link
+              href="/courses"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 w-full md:w-auto justify-center"
+            >
               Explore Programs <ArrowRight className="w-5 h-5 animate-bounce-x" />
-            </button>
+            </Link>
             
-            <button className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 w-full md:w-auto">
+            <Link
+              href="/courses"
+              className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 w-full md:w-auto"
+            >
               Book Consultation
-            </button>
+            </Link>
           </div>
           
           {/* Stats */}

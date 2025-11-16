@@ -4,6 +4,7 @@ import { AuroraBackground } from "./ui/aurora-background";
 import { Spotlight } from "./ui/spotlight";
 import { ArrowRight, Star, Users, Award } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -32,14 +33,20 @@ export function HeroSection() {
           </div>
 
           <div className="animate-fade-in-up flex flex-col md:flex-row gap-6 items-center mt-8" style={{animationDelay: '0.6s'}}>
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform hover-lift">
-              Explore Programs 
+            <Link
+              href="/courses"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform hover-lift"
+            >
+              Explore Programs
               <ArrowRight className="w-5 h-5 animate-bounce-x" />
-            </button>
+            </Link>
             
-            <button className="border-2 border-cyan-400 dark:border-blue-400 text-cyan-600 dark:text-blue-400 px-8 py-3 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform hover:bg-cyan-50 dark:hover:bg-blue-800/30">
+            <Link
+              href="/courses"
+              className="border-2 border-cyan-400 dark:border-blue-400 text-cyan-600 dark:text-blue-400 px-8 py-3 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform hover:bg-cyan-50 dark:hover:bg-blue-800/30"
+            >
               Book Consultation
-            </button>
+            </Link>
           </div>
 
           <div className="animate-fade-in-up flex flex-wrap gap-8 items-center justify-center mt-12 text-neutral-600 dark:text-neutral-400" style={{animationDelay: '0.9s'}}>

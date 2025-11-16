@@ -114,11 +114,11 @@ export default function CoursesPage() {
       ),
     },
     {
-      title: "IB Workbooks",
-      value: "ib-workbooks", 
+      title: "IB Workbook Shop",
+      value: "ib-workbooks",
       content: (
         <div className="w-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-700 to-cyan-900">
-          <p className="mb-8">IB Workbooks & Resources</p>
+          <p className="mb-8">IB Workbook Shop & Resources</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-black/20 p-6 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Mathematics AA/AI</h3>
@@ -143,37 +143,6 @@ export default function CoursesPage() {
             <div className="bg-black/20 p-6 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Extended Essay Guide</h3>
               <p className="text-sm text-neutral-300">Step-by-step guide to writing an outstanding Extended Essay with templates and examples.</p>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Merch Shop",
-      value: "merch-shop",
-      content: (
-        <div className="w-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-green-700 to-emerald-900">
-          <p className="mb-8">School Merchandise</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center">
-              <ShoppingBag className="w-12 h-12 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">School Bags</h3>
-              <p className="text-sm text-neutral-300 text-center">Premium quality backpacks with school logo</p>
-            </div>
-            <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center">
-              <Trophy className="w-12 h-12 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Apparel</h3>
-              <p className="text-sm text-neutral-300 text-center">T-shirts, hoodies, and uniforms</p>
-            </div>
-            <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center">
-              <FileText className="w-12 h-12 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Stationery</h3>
-              <p className="text-sm text-neutral-300 text-center">Notebooks, pens, and study materials</p>
-            </div>
-            <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center">
-              <Award className="w-12 h-12 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Accessories</h3>
-              <p className="text-sm text-neutral-300 text-center">Badges, pins, and collectibles</p>
             </div>
           </div>
         </div>
