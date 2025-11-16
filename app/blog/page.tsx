@@ -79,7 +79,10 @@ export default function BlogPage() {
 
       <div className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid lg:grid-cols-2 gap-6">
-          {posts.map((post) => (
+          {posts
+            .slice()
+            .reverse()
+            .map((post) => (
             <motion.article
               key={post.title}
               initial={{ opacity: 0, y: 16 }}
