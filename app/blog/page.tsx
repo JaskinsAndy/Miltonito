@@ -72,7 +72,7 @@ export default function BlogPage() {
           {posts
             .slice()
             .reverse()
-            .map((post) => (
+            .map((post, idx) => (
             <motion.article
               key={post.title}
               initial={{ opacity: 0, y: 16 }}
@@ -96,7 +96,7 @@ export default function BlogPage() {
                   href={post.href ?? "#"}
                   className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors text-sm"
                 >
-                  Read article <ArrowUpRight className="h-4 w-4" />
+                  {idx === 0 ? "Read article" : "Read preview"} <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.article>
