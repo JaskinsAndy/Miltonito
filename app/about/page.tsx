@@ -90,7 +90,7 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Today, Milton International School stands as a beacon of educational excellence, with over 95% university acceptance rate and students in top universities worldwide including Oxford, Cambridge, Harvard, and MIT.
+            Четвертая часть истории
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
