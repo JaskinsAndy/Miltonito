@@ -31,7 +31,7 @@ export default function CoursesPage() {
     {
       title: "IGCSE and A-Level Tutoring", 
       description: "We can help you keep up with current program, recover some past topics and prepare for exams and tests.",
-      link: "#igcse-alevels",
+      link: "/courses/igcse-alevel",
       icon: <BookOpen className="w-6 h-6" />
     },
     {
