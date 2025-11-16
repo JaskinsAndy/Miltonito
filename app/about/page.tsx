@@ -1,11 +1,43 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { motion } from "framer-motion";
 import { Users, Award, Globe, BookOpen, MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function AboutPage() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
+  const [feedback, setFeedback] = useState<{ type: "success" | "error" | null; message: string }>({
+    type: null,
+    message: "",
+  });
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSending(true);
+    setFeedback({ type: null, message: "" });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setFeedback({ type: "success", message: "Message sent successfully! We’ll get back to you soon." });
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      setFeedback({ type: "error", message: "Something went wrong. Please try again." });
+    } finally {
+      setSending(false);
+    }
+  };
+
   const timelineData = [
     {
       title: "2018",
@@ -292,6 +324,74 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
+
+                <form
+                  onSubmit={handleSubmit}
+                  className="bg-neutral-50 dark:bg-neutral-900 rounded-2xl p-8 shadow-lg space-y-4"
+                >
+                  <h3 className="text-2xl font-bold text-black dark:text-white">Send us a message</h3>
+                  <p className="text-neutral-600 dark:text-neutral-400">
+                    Share a few details and we’ll respond soon. Your information is sent securely.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label className="block text-sm font-semibold text-black dark:text-white">Name</label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="block text-sm font-semibold text-black dark:text-white">Email</label>
+                      <input
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="you@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-semibold text-black dark:text-white">Message</label>
+                    <textarea
+                      required
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      rows={4}
+                      className="w-full rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-3 text-neutral-800 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="How can we help?"
+                    />
+                  </div>
+                  {feedback.type && (
+                    <div
+                      className={`text-sm font-semibold ${
+                        feedback.type === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {feedback.message}
+                    </div>
+                  )}
+                  <div className="flex gap-3 items-center">
+                    <motion.button
+                      type="submit"
+                      whileHover={{ scale: sending ? 1 : 1.03 }}
+                      whileTap={{ scale: sending ? 1 : 0.98 }}
+                      disabled={sending}
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-60 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300"
+                    >
+                      {sending ? "Sending..." : "Send message"}
+                    </motion.button>
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                      We’ll reply to your email as soon as possible.
+                    </p>
+                  </div>
+                </form>
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
