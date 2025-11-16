@@ -4,17 +4,20 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Tabs } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { 
-  BookOpen, 
-  GraduationCap, 
   Award, 
-  Users, 
-  Target, 
-  Globe, 
-  School, 
-  Trophy,
-  ShoppingBag,
+  BookOpen, 
+  Brain,
+  Calculator,
   FileText,
-  TrendingUp
+  Globe, 
+  GraduationCap, 
+  Languages,
+  School, 
+  ShoppingBag,
+  Target, 
+  Trophy,
+  TrendingUp,
+  Users
 } from "lucide-react";
 
 export default function CoursesPage() {
@@ -44,6 +47,18 @@ export default function CoursesPage() {
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
+      title: "Critical Thinking",
+      description: "Develop analytical reasoning, problem solving, and logic skills through structured practice.",
+      link: "#critical-thinking",
+      icon: <Brain className="w-6 h-6" />
+    },
+    {
+      title: "Language Studies",
+      description: "Comprehensive language instruction with fluency building, writing practice, and cultural context.",
+      link: "#language-studies",
+      icon: <Languages className="w-6 h-6" />
+    },
+    {
       title: "Ukrainian Diploma",
       description: "Specialized support for Ukrainian diploma requirements with native-speaking instructors and cultural context.",
       link: "#ukrainian-diploma", 
@@ -56,9 +71,9 @@ export default function CoursesPage() {
       icon: <School className="w-6 h-6" />
     },
     {
-      title: "Norway Curriculum Tutoring",
+      title: "Norwegian Curriculum Tutoring",
       description: "Norwegian education system support including language instruction and cultural integration assistance.",
-      link: "#norway-curriculum",
+      link: "#norwegian-curriculum",
       icon: <Globe className="w-6 h-6" />
     },
     {
@@ -70,8 +85,14 @@ export default function CoursesPage() {
     {
       title: "Admission to Universities",
       description: "Complete university application guidance including essay writing, interview preparation, and scholarship applications.",
-      link: "#university-admissions",
+      link: "#admission-to-universities",
       icon: <GraduationCap className="w-6 h-6" />
+    },
+    {
+      title: "Capybara Math Olympiad",
+      description: "Advanced math problem-solving training tailored for competitive olympiad performance.",
+      link: "#capybara-math-olympiad",
+      icon: <Calculator className="w-6 h-6" />
     },
     {
       title: "Teacher Coaching",
