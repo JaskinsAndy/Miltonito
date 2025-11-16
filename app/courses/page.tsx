@@ -36,67 +36,67 @@ export default function CoursesPage() {
     },
     {
       title: "Preparation for Exams",
-      description: "Intensive exam preparation courses designed to maximize performance in standardized tests and entrance examinations.",
+      description: "We can help you to get prepared for your exams in IB DIPLOMA, IGSCE and A-Level programs, as well as PSAT, SAT and GMAT.",
       link: "#exam-prep",
       icon: <Target className="w-6 h-6" />
     },
     {
       title: "Levelling Up School Studies",
-      description: "Personalized academic support to help students excel in their current school curriculum and build confidence.",
+      description: "We can work on the program from your school, helping get what you didn’t understand in the school. As well as we can go together through your homework.",
       link: "#academic-support",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
       title: "Critical Thinking",
-      description: "Develop analytical reasoning, problem solving, and logic skills through structured practice.",
+      description: "A lot of illustrated logic task will develop logic thinking in you. Then any problem in life will seem so easy.",
       link: "#critical-thinking",
       icon: <Brain className="w-6 h-6" />
     },
     {
       title: "Language Studies",
-      description: "Comprehensive language instruction with fluency building, writing practice, and cultural context.",
+      description: "Do you want to be a polyglot? Or merely adapt new language? With great pleasure we will assist you in that! Curious about which language you can study with us? Follow the link and discover!",
       link: "#language-studies",
       icon: <Languages className="w-6 h-6" />
     },
     {
       title: "Ukrainian Diploma",
-      description: "Specialized support for Ukrainian diploma requirements with native-speaking instructors and cultural context.",
+      description: "Do you left Ukraine but don’t want to left education there? No worries! We will assist you. Teaching all the required Ukrainian school curriculum subjects we make you ready to pass the exit assessment “NMT” as well as giving your way to get the Ukrainian school certificate.",
       link: "#ukrainian-diploma", 
       icon: <Globe className="w-6 h-6" />
     },
     {
       title: "Austrian Program",
-      description: "Complete Austrian curriculum support including Matura preparation with Austrian-certified educators.",
+      description: "Helping students to achieve even greater performance in their schools in Austria. Specifically for expats!",
       link: "#austrian-program",
       icon: <School className="w-6 h-6" />
     },
     {
-      title: "Norwegian Curriculum Tutoring",
-      description: "Norwegian education system support including language instruction and cultural integration assistance.",
-      link: "#norwegian-curriculum",
+      title: "Norway Curriculum Tutoring",
+      description: "Helping with Math and Science",
+      link: "#norway-curriculum",
       icon: <Globe className="w-6 h-6" />
     },
     {
       title: "Mock Exams",
-      description: "Realistic practice examinations under timed conditions with detailed feedback and improvement strategies.",
+      description: "Prepares means equipped! Every spring we are conducting Mock Exams to check your readiness for upcoming assessments!",
       link: "#mock-exams",
       icon: <FileText className="w-6 h-6" />
     },
     {
       title: "Admission to Universities",
-      description: "Complete university application guidance including essay writing, interview preparation, and scholarship applications.",
+      description: "Preparing all needed documents for you. Training for exams in Math and Science, as well as language assessments.",
       link: "#admission-to-universities",
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
       title: "Capybara Math Olympiad",
-      description: "Advanced math problem-solving training tailored for competitive olympiad performance.",
+      description: "Math Competition Worldwide. Online. With super prizes.",
       link: "#capybara-math-olympiad",
       icon: <Calculator className="w-6 h-6" />
     },
     {
       title: "Teacher Coaching",
-      description: "Professional development for educators including pedagogy, classroom management, and subject-specific training.",
+      description: "Individual and grouped sessions with aim to reveal your hidden abilities and potential!",
       link: "#teacher-coaching",
       icon: <Users className="w-6 h-6" />
     }
