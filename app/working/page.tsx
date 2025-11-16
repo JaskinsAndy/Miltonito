@@ -57,7 +57,7 @@ export default function WorkingPage() {
             </Link>
             
             <Link
-              href="/courses"
+              href="/about#contact-form"
               className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 w-full md:w-auto"
             >
               Book Consultation

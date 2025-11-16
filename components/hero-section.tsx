@@ -42,7 +42,7 @@ export function HeroSection() {
             </Link>
             
             <Link
-              href="/courses"
+              href="/about#contact-form"
               className="border-2 border-cyan-400 dark:border-blue-400 text-cyan-600 dark:text-blue-400 px-8 py-3 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform hover:bg-cyan-50 dark:hover:bg-blue-800/30"
             >
               Book Consultation

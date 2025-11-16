@@ -271,6 +271,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Contact Information */}
               <motion.div
+                id="contact-form"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

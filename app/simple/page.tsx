@@ -48,7 +48,7 @@ export default function SimplePage() {
               </motion.button>
             </Link>
             
-            <Link href="/courses">
+            <Link href="/about#contact-form">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
