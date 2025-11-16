@@ -67,7 +67,7 @@ export default function CoursesPage() {
     {
       title: "Austrian Program",
       description: "Helping students to achieve even greater performance in their schools in Austria. Specifically for expats!",
-      link: "#austrian-program",
+      link: "/courses/austrian-program",
       icon: <School className="w-6 h-6" />
     },
     {
