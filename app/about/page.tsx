@@ -12,7 +12,7 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Milton International School was founded with a vision to provide world-class education that prepares students for global success. Starting with just 25 students and 5 dedicated teachers.
+            Первая часть истории
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -38,7 +38,7 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Achieved IB World School authorization and introduced comprehensive online learning platform during the pandemic, ensuring uninterrupted education for all students.
+            Вторая часть истории
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -64,7 +64,7 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Expanded to serve 100+ students globally with partnerships across Europe. Launched specialized programs for Ukrainian refugees and international students.
+            Третья часть истории
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
