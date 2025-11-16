@@ -47,6 +47,7 @@ const posts: Post[] = [
     date: "08.09.2025",
     title: "Understanding the Differences Between IB Math AA & AI (HL/SL): A Parent’s Guide",
     summary: "A parent-friendly explanation of pathways, workloads, and how to pick the right IB Math track.",
+    href: "/blog/ib-math-aa-ai",
   },
 ];
 
