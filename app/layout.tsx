@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Footer } from "@/components/footer";
-import { Home, BookOpen, Users, GraduationCap } from "lucide-react";
+import { Home, BookOpen, Users, GraduationCap, PenSquare, Trophy } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +51,16 @@ const navItems = [
     name: "Teachers",
     link: "/teachers",
     icon: <GraduationCap className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Capybara",
+    link: "/courses/capybara-math-olympiad",
+    icon: <Trophy className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Blog",
+    link: "/blog",
+    icon: <PenSquare className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "About Us",
