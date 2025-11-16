@@ -73,7 +73,7 @@ export default function CoursesPage() {
     {
       title: "Norway Curriculum Tutoring",
       description: "Helping with Math and Science",
-      link: "#norway-curriculum",
+      link: "/courses/norway-curriculum",
       icon: <Globe className="w-6 h-6" />
     },
     {
@@ -85,19 +85,19 @@ export default function CoursesPage() {
     {
       title: "Admission to Universities",
       description: "Preparing all needed documents for you. Training for exams in Math and Science, as well as language assessments.",
-      link: "#admission-to-universities",
+      link: "/courses/admission-to-universities",
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
       title: "Capybara Math Olympiad",
       description: "Math Competition Worldwide. Online. With super prizes.",
-      link: "#capybara-math-olympiad",
+      link: "/courses/capybara-math-olympiad",
       icon: <Calculator className="w-6 h-6" />
     },
     {
       title: "Teacher Coaching",
       description: "Individual and grouped sessions with aim to reveal your hidden abilities and potential!",
-      link: "#teacher-coaching",
+      link: "/courses/teacher-coaching",
       icon: <Users className="w-6 h-6" />
     }
   ];
