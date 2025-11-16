@@ -30,7 +30,7 @@ export default function CoursesPage() {
     },
     {
       title: "IGCSE and A-Level Tutoring", 
-      description: "Expert tutoring for Cambridge IGCSE and A-Level qualifications across all major subjects with proven track record.",
+      description: "We can help you keep up with current program, recover some past topics and prepare for exams and tests.",
       link: "#igcse-alevels",
       icon: <BookOpen className="w-6 h-6" />
     },
