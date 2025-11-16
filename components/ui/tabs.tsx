@@ -103,7 +103,7 @@ export const FadeInDiv = ({
       key={activeTab.value}
       layoutId={activeTab.value}
       className={cn("relative w-full", className)}
-      animate={{ opacity: 1, y: hovering ? [0, 10, 0] : 0 }}
+      animate={{ opacity: 1, y: hovering ? 10 : 0 }}
       transition={{ type: "spring", bounce: 0.25, duration: 0.6 }}
     >
       {activeTab.content}
