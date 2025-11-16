@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/nodemailer": "^7.0.3",
     "shadcn": "^3.2.1"
   },
   "name": "miltonschool",
