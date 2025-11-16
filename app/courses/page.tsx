@@ -79,7 +79,7 @@ export default function CoursesPage() {
     {
       title: "Mock Exams",
       description: "Prepares means equipped! Every spring we are conducting Mock Exams to check your readiness for upcoming assessments!",
-      link: "#mock-exams",
+      link: "/courses/mock-exams",
       icon: <FileText className="w-6 h-6" />
     },
     {
