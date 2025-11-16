@@ -66,7 +66,7 @@ export default function WorkingPage() {
             
             <div className="flex items-center gap-2 hover:scale-110 transition-transform duration-300 cursor-pointer">
               <Users className="w-6 h-6 text-blue-400 animate-pulse" style={{animationDelay: '0.5s'}} />
-              <span className="text-lg">500+ Students</span>
+              <span className="text-lg">100+ Students</span>
             </div>
             
             <div className="flex items-center gap-2 hover:scale-110 transition-transform duration-300 cursor-pointer">

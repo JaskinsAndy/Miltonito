@@ -84,7 +84,7 @@ export default function SimplePage() {
               >
                 <Users className="w-6 h-6 text-blue-400" />
               </motion.div>
-              <span className="text-lg">500+ Students</span>
+              <span className="text-lg">100+ Students</span>
             </motion.div>
             
             <motion.div 

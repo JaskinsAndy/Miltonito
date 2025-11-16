@@ -49,7 +49,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:scale-110 transition-transform duration-300">
               <Users className="w-5 h-5 text-cyan-500 animate-pulse" style={{animationDelay: '0.5s'}} />
-              <span className="text-sm">500+ Students</span>
+              <span className="text-sm">100+ Students</span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:scale-110 transition-transform duration-300">
               <Award className="w-5 h-5 text-blue-500 animate-pulse" style={{animationDelay: '1s'}} />

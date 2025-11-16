@@ -166,7 +166,7 @@ export default function AboutPage() {
                 className="text-center p-6 bg-white dark:bg-black rounded-lg shadow-lg"
               >
                 <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2 text-black dark:text-white">500+</h3>
+                <h3 className="text-xl font-bold mb-2 text-black dark:text-white">100+</h3>
                 <p className="text-neutral-600 dark:text-neutral-400">Global Students</p>
               </motion.div>
               <motion.div
