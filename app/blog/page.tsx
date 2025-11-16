@@ -96,7 +96,7 @@ export default function BlogPage() {
                   href={post.href ?? "#"}
                   className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors text-sm"
                 >
-                  Read preview <ArrowUpRight className="h-4 w-4" />
+                  Read article <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.article>
