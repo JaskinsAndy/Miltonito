@@ -43,7 +43,7 @@ export default function CoursesPage() {
     {
       title: "Levelling Up School Studies",
       description: "We can work on the program from your school, helping get what you didn’t understand in the school. As well as we can go together through your homework.",
-      link: "#academic-support",
+      link: "/courses/levelling-up",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
@@ -55,13 +55,13 @@ export default function CoursesPage() {
     {
       title: "Language Studies",
       description: "Do you want to be a polyglot? Or merely adapt new language? With great pleasure we will assist you in that! Curious about which language you can study with us? Follow the link and discover!",
-      link: "#language-studies",
+      link: "/courses/language-studies",
       icon: <Languages className="w-6 h-6" />
     },
     {
       title: "Ukrainian Diploma",
       description: "Do you left Ukraine but don’t want to left education there? No worries! We will assist you. Teaching all the required Ukrainian school curriculum subjects we make you ready to pass the exit assessment “NMT” as well as giving your way to get the Ukrainian school certificate.",
-      link: "#ukrainian-diploma", 
+      link: "/courses/ukrainian-diploma", 
       icon: <Globe className="w-6 h-6" />
     },
     {
