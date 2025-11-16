@@ -49,7 +49,7 @@ export default function CoursesPage() {
     {
       title: "Critical Thinking",
       description: "A lot of illustrated logic task will develop logic thinking in you. Then any problem in life will seem so easy.",
-      link: "#critical-thinking",
+      link: "/courses/critical-thinking",
       icon: <Brain className="w-6 h-6" />
     },
     {
