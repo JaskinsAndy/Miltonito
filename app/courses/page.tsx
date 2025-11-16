@@ -25,7 +25,7 @@ export default function CoursesPage() {
     {
       title: "IB Program Tutoring",
       description: "We can help you keep up with current program, recover some past topics and prepare for exams and tests.",
-      link: "#ib-tutoring",
+      link: "/courses/ib",
       icon: <Award className="w-6 h-6" />
     },
     {
