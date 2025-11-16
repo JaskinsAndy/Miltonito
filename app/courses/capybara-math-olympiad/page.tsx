@@ -5,14 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Award, CalendarDays, CheckCircle2, Sparkles, Users } from "lucide-react";
 
-const levels = [
-  "Capy Pups (6-8 years) – curious beginners exploring the world of numbers",
-  "Junior Capys (9-10 years) – building solid math skills with growing confidence",
-  "Smart Explorers (11-13 years) – adventurous problem-solvers, ready for challenges",
-  "Math Challengers (14-15 years) – sharpening logic and competing at higher levels",
-  "Prime Thinkers (16-17 years) – advanced problem-solvers preparing for the future",
-];
-
 const specials = [
   "Focus on creative problem-solving and logical thinking, not just advanced math formulas.",
   "Open to three age categories: 9-11 “Explorers”, 12-14 “Innovators”, 15-17 “Visionaries”.",
@@ -90,20 +82,6 @@ export default function CapybaraOlympiadPage() {
               sizes="(min-width: 1024px) 420px, 100vw"
             />
           </div>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-100 text-center">Competition Levels by Age:</h2>
-          <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 space-y-2">
-            <ul className="list-disc list-inside text-neutral-300 space-y-2">
-              {levels.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <p className="text-neutral-300 leading-relaxed text-center">
-            Each participant receives a diploma of participation, recognizing their effort and achievement. The top three performers in each age group earn valuable prizes for outstanding problem-solving.
-          </p>
         </section>
 
         <section className="space-y-4">
