@@ -178,7 +178,7 @@ export default function CoursesPage() {
             </p>
           </div>
 
-          <div className="h-20 md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start">
+          <div className="h-20 md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mb-16 md:mb-24">
             <Tabs tabs={tabs} />
           </div>
         </motion.div>
@@ -186,4 +186,3 @@ export default function CoursesPage() {
     </div>
   );
 }
-
