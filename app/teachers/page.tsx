@@ -11,7 +11,7 @@ export default function TeachersPage() {
     image: "/Teachers/IhorSukov.webp",
     description: "Visionary educator with over 15 years of international teaching experience. Founded Milton International School with the mission to provide world-class education that prepares students for global success.",
     specialties: ["Educational Leadership", "International Curricula", "Student Development", "Academic Excellence"],
-    achievements: ["Established IB World School authorization", "500+ students served globally", "95% university acceptance rate", "15+ countries reached"]
+    achievements: ["Established IB World School authorization", "100+ students served globally", "95% university acceptance rate", "15+ countries reached"]
   };
 
   const teachers = [

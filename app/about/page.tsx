@@ -64,7 +64,7 @@ export default function AboutPage() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Expanded to serve 500+ students globally with partnerships across Europe. Launched specialized programs for Ukrainian refugees and international students.
+            Expanded to serve 100+ students globally with partnerships across Europe. Launched specialized programs for Ukrainian refugees and international students.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
