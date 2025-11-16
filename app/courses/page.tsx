@@ -37,7 +37,7 @@ export default function CoursesPage() {
     {
       title: "Preparation for Exams",
       description: "We can help you to get prepared for your exams in IB DIPLOMA, IGSCE and A-Level programs, as well as PSAT, SAT and GMAT.",
-      link: "#exam-prep",
+      link: "/courses/exam-prep",
       icon: <Target className="w-6 h-6" />
     },
     {
