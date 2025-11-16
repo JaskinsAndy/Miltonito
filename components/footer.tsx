@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -17,31 +17,21 @@ export function Footer() {
             <div className="flex space-x-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://www.facebook.com/sukovigor/"
+                target="_blank"
+                rel="noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://www.instagram.com/igorsukov77"
+                target="_blank"
+                rel="noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
               >
                 <Instagram className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
               </motion.a>
             </div>
           </div>
@@ -50,13 +40,36 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-2">
-              {["Home", "Courses & Services", "About Us", "IB Workbooks", "Merch Shop"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="/" className="text-neutral-400 hover:text-white transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/courses" className="text-neutral-400 hover:text-white transition-colors">
+                  Courses &amp; Services
+                </a>
+              </li>
+              <li>
+                <a href="/teachers" className="text-neutral-400 hover:text-white transition-colors">
+                  Teachers
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-neutral-400 hover:text-white transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="text-neutral-400 hover:text-white transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="/courses" className="text-neutral-400 hover:text-white transition-colors">
+                  IB Workbooks Shop
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -64,20 +77,36 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Programs</h4>
             <ul className="space-y-2">
-              {[
-                "IB Program Tutoring",
-                "IGCSE & A-Level",
-                "Ukrainian Diploma",
-                "Austrian Program",
-                "Norway Curriculum",
-                "Mock Exams"
-              ].map((program) => (
-                <li key={program}>
-                  <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                    {program}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="/courses/ib" className="text-neutral-400 hover:text-white transition-colors">
+                  IB Program Tutoring
+                </a>
+              </li>
+              <li>
+                <a href="/courses/igcse-alevel" className="text-neutral-400 hover:text-white transition-colors">
+                  IGCSE &amp; A-Level
+                </a>
+              </li>
+              <li>
+                <a href="/courses/ukrainian-diploma" className="text-neutral-400 hover:text-white transition-colors">
+                  Ukrainian Diploma
+                </a>
+              </li>
+              <li>
+                <a href="/courses/austrian-program" className="text-neutral-400 hover:text-white transition-colors">
+                  Austrian Program
+                </a>
+              </li>
+              <li>
+                <a href="/courses/norway-curriculum" className="text-neutral-400 hover:text-white transition-colors">
+                  Norway Curriculum
+                </a>
+              </li>
+              <li>
+                <a href="/courses/mock-exams" className="text-neutral-400 hover:text-white transition-colors">
+                  Mock Exams
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -98,21 +127,11 @@ export function Footer() {
                 <span className="text-neutral-400">Paragonstraße 2/4, Vienna, Austria</span>
               </div>
             </div>
-            
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-colors mt-4"
-            >
-              Schedule Consultation
-            </motion.button>
           </div>
         </div>
 
         <div className="border-t border-neutral-800 mt-12 pt-8 text-center">
-          <p className="text-neutral-400">
-            © 2024 Milton International School. All rights reserved. | Privacy Policy | Terms of Service
-          </p>
+          <p className="text-neutral-400">© 2025 Milton International School. All rights reserved.</p>
         </div>
       </div>
     </footer>
