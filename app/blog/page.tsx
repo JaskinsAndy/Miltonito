@@ -55,15 +55,14 @@ export default function BlogPage() {
     <div className="min-h-screen bg-black text-white">
       <div className="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900">
         <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_15%_15%,rgba(255,255,255,0.18),transparent_30%),radial-gradient(circle_at_85%_10%,rgba(255,255,255,0.16),transparent_25%)]" />
-        <div className="max-w-6xl mx-auto px-6 py-16 relative flex flex-col lg:flex-row gap-10 items-center">
-          <div className="space-y-4 max-w-2xl">
+        <div className="max-w-6xl mx-auto px-6 py-16 relative flex flex-col items-center text-center gap-6">
+          <div className="space-y-4 max-w-3xl">
             <p className="uppercase text-sm tracking-[0.25em] text-purple-100">Blog</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">News, Guides, and Updates</h1>
             <p className="text-purple-100/90 text-lg leading-relaxed">
               Highlights from our programs, quick guides for families, and announcements from Milton International School. Full articles coming soon—tap into the latest headlines below.
             </p>
           </div>
-          <div className="hidden" />
         </div>
       </div>
 
