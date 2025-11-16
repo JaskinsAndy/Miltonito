@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, ArrowUpRight, BookOpen } from "lucide-react";
 
@@ -64,16 +63,7 @@ export default function BlogPage() {
               Highlights from our programs, quick guides for families, and announcements from Milton International School. Full articles coming soon—tap into the latest headlines below.
             </p>
           </div>
-          <div className="relative w-full lg:w-[360px] h-[220px] lg:h-[260px] overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-            <Image
-              src="/Capybara/capybara-2025-add.webp"
-              alt="Blog highlight placeholder"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 360px, 100vw"
-              priority
-            />
-          </div>
+          <div className="hidden" />
         </div>
       </div>
 
